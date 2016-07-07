@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forms.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+      <nav class="menu">
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Login</h1>
+    <form action="do-smothing" method="post">
+      <div class="form-row">
+        <label for="email" >Email: </label>
+        <input type="email" name="email" id="email" required autofocus minlength="6" maxlength="32" placeholder="Enter your email">
+      </div>
+      <div class="form-row">
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required minlength="6" maxlength="32" pattern="[^<>\s]+" placeholder="Enter your password">
+      </div>
+      <div class="form-row">
+        <label for="remember-me">Remember me </label>
+        <input type="checkbox" name="remember-me" id="remember-me" value="yes">
+      </div>
+      <div class="form-row">
+        <input type="submit" value="Login" class="form-button">
+      </div>
+    </form>
+  </body>
+</html>
